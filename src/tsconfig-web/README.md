@@ -1,21 +1,25 @@
 ## Overview
-A Prettier config for various projects.
+A collection of Typescript configs for various projects.
 
 ## Installation
 ```
-npm i @ehubbell/tsconfig-config  --save-dev
+npm i @ehubbell/tsconfigs  --save-dev
 ```
 
 ## Usage
-Create a `.prettierrc` file and add the following:
+Create a `tsconfig.json` file and add the following:
 
 ```json
-"@ehubbell/prettier-config"
-```
+{
+  "extends": "@ehubbell/tsconfig-web/web.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
 
-Or, add the following to your `package.json` file:
-```json
-  "prettier": "@ehubbell/prettier-config",
 ```
 
 ## Author
@@ -24,3 +28,4 @@ Or, add the following to your `package.json` file:
 
 ## Links
 - https://www.typescriptlang.org/tsconfig/#extends
+- https://dev.to/saiful7778/how-to-create-a-reusable-typescript-config-package-in-turborepo-3nh
