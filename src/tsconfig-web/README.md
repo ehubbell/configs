@@ -3,7 +3,7 @@ A Prettier config for various projects.
 
 ## Installation
 ```
-npm i @ehubbell/prettier-config --save-dev
+npm i @ehubbell/tsconfig-config  --save-dev
 ```
 
 ## Usage
@@ -23,4 +23,4 @@ Or, add the following to your `package.json` file:
 - eric@erichubbell.com
 
 ## Links
-- https://archive.eslint.org/docs/developer-guide/shareable-configs
+- https://www.typescriptlang.org/tsconfig/#extends

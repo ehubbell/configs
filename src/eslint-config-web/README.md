@@ -3,8 +3,8 @@ An eslint config for Web projects.
 
 ## Installation
 ```
-npm i @ehubbell/eslint-config-web
-npx install-peerdeps --dev @ehubbell/eslint-config-web
+npm i @ehubbell/eslint-config-web --save-dev
+npm install
 ```
 
 ## Usage
@@ -15,6 +15,13 @@ Create an `.eslintrc` file and add the following:
   "root": true,
   "extends": ["@ehubbell/eslint-config-web"]
 }
+```
+
+Or, add the following to your `package.json` file:
+```json
+  "eslintConfig": {
+    "extends": "@ehubbell/eslint-config-web"
+  },
 ```
 
 ## Author

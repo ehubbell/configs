@@ -1,14 +1,14 @@
 module.exports = {
-	"arrowParens": "avoid",
-	"bracketSameLine": true,
-	"bracketSpacing": true,
-	"htmlWhitespaceSensitivity": "ignore",
-	"printWidth": 120,
-	"singleQuote": true,
-	"jsxSingleQuote": true,
-	"trailingComma": "all",
-	"tabWidth": 2,
-	"useTabs": true
+	arrowParens: "avoid",
+	bracketSameLine: true,
+	bracketSpacing: true,
+	htmlWhitespaceSensitivity: "ignore",
+	printWidth: 120,
+	singleQuote: true,
+	jsxSingleQuote: true,
+	trailingComma: "all",
+	tabWidth: 2,
+	useTabs: true
 }
 
 // Docs
