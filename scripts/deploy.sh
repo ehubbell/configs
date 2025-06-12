@@ -37,12 +37,22 @@ git push & push_id=$!
 wait $push_id
 if [ $? -eq 1 ]; then exit; fi
 
+echo -e "\n cd in \n"
+cd packages/eslint-config-web & cd=$!
+wait $cd
+if [ $? -eq 1 ]; then exit; fi
+
 echo -e "\n npm version \n"
-cd packages/eslint-config-web && npm version $2
+npm version $2
 
 echo -e "\n npm publish \n"
-cd packages/eslint-config-web && npm publish --access public & publish_id=$!
+npm publish --access public & publish_id=$!
 wait $publish_id
+if [ $? -eq 1 ]; then exit; fi
+
+echo -e "\n cd out \n"
+cd ../.. & cd=$!
+wait $cd
 if [ $? -eq 1 ]; then exit; fi
 
 # echo -e "\n npm version \n"
