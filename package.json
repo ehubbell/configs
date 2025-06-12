@@ -4,13 +4,12 @@
   "description": "A collection of configs used for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
-  "type": "module",
   "exports": {
     "./eslint-config-node": "./src/eslint-config-node.js",
     "./eslint-config-web": "./src/eslint-config-web.js",
     "./prettier-config": "./src/prettier-config.js",
-    "./ts-config-node": "./src/ts-config-node.js",
-    "./ts-config-web": "./src/ts-config-web.js"
+    "./ts-config-node": "./src/ts-config-node.json",
+    "./ts-config-web": "./src/ts-config-web.json"
   },
   "files": [
     "src/*"
