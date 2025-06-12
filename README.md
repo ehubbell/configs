@@ -1,5 +1,5 @@
 ## Overview
-This library contains a collection of configs for various projects.
+This library contains suitable configurations for various projects.
 It's designed to simplify and standardize your project setup for less boilerplate and faster development.
 
 ## Installation
