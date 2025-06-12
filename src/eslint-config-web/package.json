@@ -4,11 +4,14 @@
   "description": "An ESLint config used for Web projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehubbell/configs.git"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "playbooks",
     "eslint",
@@ -17,6 +20,9 @@
     "tsconfig"
   ],
   "scripts": {
+    "dev": "vite build --mode development --minify false --watch",
+    "start": "vite build --mode development --minify false",
+    "build": "vite build --mode production --minify false",
     "yalc": "npx yalc push"
   },
   "peerDependencies": {

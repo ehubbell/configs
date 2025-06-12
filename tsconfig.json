@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "packages",
-    "rootDir": "packages",
+    "baseUrl": "src",
+    "rootDir": ".",
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -23,11 +23,11 @@
     "noImplicitReturns": false,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "src/*": ["packages/*"],
+      "src/*": ["src/*"],
       "tests/*": ["./tests/*"]
     }
   },
-  "include": ["packages", "tests"],
+  "include": ["src", "tests"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

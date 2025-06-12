@@ -15,20 +15,24 @@ export default defineConfig({
 	base: './',
 	build: {
 		lib: {
-			entry: path.resolve(__dirname, 'src/index.tsx'),
+			entry: path.resolve(__dirname, 'index.js'),
 			name: 'HTML',
 			formats: ['es', 'cjs'],
 			fileName: format => `index.${format}.js`,
 		},
 	},
 	plugins: [pushBuild()],
-	resolve: {
-		alias: {
-			src: path.resolve(__dirname, '/src'),
-			components: path.resolve(__dirname, '/src/components'),
-			styles: path.resolve(__dirname, '/src/styles'),
-			types: path.resolve(__dirname, '/src/types'),
-			utils: path.resolve(__dirname, '/src/utils'),
-		},
+	optimizeDeps: {
+		include: [
+			'@next/eslint-plugin-next',
+			'@typescript-eslint/eslint-plugin',
+			'@typescript-eslint/parser',
+			'eslint-config-next',
+			'eslint-config-prettier',
+			'eslint-plugin-eqeqeq-fix',
+			'eslint-plugin-prettier',
+			'eslint-plugin-simple-import-sort',
+			'eslint-plugin-unused-imports',
+		],
 	},
 });
