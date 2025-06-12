@@ -53,6 +53,12 @@ Create a `tsconfig.json` file and add one of the following:
 - [Eric Hubbell](http://www.erichubbell.com)
 - eric@erichubbell.com
 
+## Issues
+- eslint v9 doesn't allow nested `extends`
+- this means we need to import each one separately
+- eslint v9 also doesn't allow placement in package.json
+- module.exports >> export default
+
 ## Links
 - https://archive.eslint.org/docs/developer-guide/shareable-configs
 - https://prettier.io/docs/sharing-configurations
