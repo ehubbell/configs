@@ -17,4 +17,9 @@ Create an `.eslintrc` file and add the following:
 }
 ```
 
-## Development
+## Author
+- [Eric Hubbell](http://www.erichubbell.com)
+- eric@erichubbell.com
+
+## Links
+- https://archive.eslint.org/docs/developer-guide/shareable-configs

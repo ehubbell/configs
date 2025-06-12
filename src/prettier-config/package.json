@@ -1,7 +1,7 @@
 {
-  "name": "@ehubbell/eslint-config-web",
-  "version": "0.0.8",
-  "description": "An ESLint config used for Web projects.",
+  "name": "@ehubbell/prettier-config",
+  "version": "0.0.0",
+  "description": "A Prettier config for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
   "main": "index.js",
@@ -11,8 +11,8 @@
   },
   "keywords": [
     "playbooks",
-    "eslint",
-    "eslint-config"
+    "prettier",
+    "prettier-config"
   ],
   "scripts": {
     "yalc": "npx yalc push"

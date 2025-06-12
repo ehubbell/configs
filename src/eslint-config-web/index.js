@@ -6,6 +6,7 @@ module.exports = {
 		'plugin:eqeqeq-fix/recommended',
 		'plugin:@next/next/recommended',
 		'plugin:prettier/recommended',
+		// 'prettier'
 	],
 	parser: '@typescript-eslint/parser',
 	plugins: ['react', '@typescript-eslint', 'unused-imports', 'simple-import-sort'],
@@ -45,3 +46,6 @@ module.exports = {
 		},
 	],
 };
+
+// Docs
+// https://archive.eslint.org/docs/developer-guide/shareable-configs

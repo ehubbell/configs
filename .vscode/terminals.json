@@ -8,10 +8,22 @@
 			"command": "npm start"
 		},
 		{
-			"name": "project-terminal-alt",
+			"name": "project-terminal-eslint",
 			"focus": true,
 			"execute": false,
-			"command": "npm link"
+			"command": ""
+		},
+		{
+			"name": "project-terminal-prettier",
+			"focus": true,
+			"execute": false,
+			"command": ""
+		},
+		{
+			"name": "project-terminal-ts",
+			"focus": true,
+			"execute": false,
+			"command": ""
 		},
     {
 			"name": "misc",
