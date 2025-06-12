@@ -39,7 +39,7 @@
     "yalc": "npx yalc push"
   },
   "peerDependencies": {
-    "eslint": "^8.50.0",
+    "eslint": "^9.0.0",
     "prettier": "^3.5",
     "typescript": "^5"
   },
