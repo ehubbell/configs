@@ -37,7 +37,7 @@ git push & push_id=$!
 wait $push_id
 if [ $? -eq 1 ]; then exit; fi
 
-echo -e "\n npm version \n"
+echo -e "\n eslint-config-web \n"
 cd src/eslint-config-web && npm version $2 && npm publish --access public && cd ../.. & publish_id=$!
 wait $publish_id
 if [ $? -eq 1 ]; then exit; fi
