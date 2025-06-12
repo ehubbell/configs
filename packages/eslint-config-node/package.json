@@ -1,10 +1,10 @@
 {
   "name": "@ehubbell/eslint-config-node",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "An ESLint config used for node projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehubbell/configs.git"
@@ -22,10 +22,12 @@
     "prettier",
     "tsconfig"
   ],
-  "scripts": {},
+  "scripts": {
+    "yalc": "npx yalc push"
+  },
   "peerDependencies": {
-    "eslint": "^8.0.0",
-    "typescript": "^4.0.0"
+    "eslint": "^8",
+    "typescript": "^4 || ^5"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.0",
@@ -37,17 +39,12 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.1",
-    "dts-bundle-generator": "^9.5.1",
     "eslint": "^8.29.0",
     "husky": "^9.1.7",
-    "jest": "^29.5.0",
     "prettier": "^3.3.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.8.1",
-    "typescript": "^4.9.4",
-    "vite": "^4.0.0",
-    "vite-plugin-dts": "^4.5.0"
+    "typescript": "^5"
   }
 }

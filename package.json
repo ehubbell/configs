@@ -1,0 +1,33 @@
+{
+  "name": "@ehubbell/eslint-config-react",
+  "version": "0.0.3",
+  "description": "An ESLint config used for react projects.",
+  "author": "Eric Hubbell<eric@erichubbell.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format": "prettier src",
+    "format:fix": "prettier --write src",
+    "clean": "npm run lint:fix && npm run format:fix",
+    "commit": "scripts/commit.sh",
+    "deploy": "scripts/deploy.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^15.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "eslint-config-next": "^15.3.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-eqeqeq-fix": "^1.0.3",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "eslint": "^8.29.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5",
+    "vite": "^4.0.0"
+  }
+}

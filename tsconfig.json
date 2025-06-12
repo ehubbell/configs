@@ -5,8 +5,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "types": ["vite/client", "node", "react", "jest"],
+    "types": ["vite/client", "node", "jest"],
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "declaration": true,
     "allowJs": true,
@@ -28,7 +27,7 @@
       "tests/*": ["./tests/*"]
     }
   },
-  "include": ["packages", "tests", "types"],
+  "include": ["packages", "tests"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

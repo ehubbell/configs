@@ -38,15 +38,26 @@ wait $push_id
 if [ $? -eq 1 ]; then exit; fi
 
 echo -e "\n npm version \n"
-npm version $2
-
-echo -e "\n npm build \n"
-npm run build & build_id=$!
-wait $build_id
-if [ $? -eq 1 ]; then exit; fi
+cd packages/eslint-config-node && npm version $2
 
 echo -e "\n npm publish \n"
-npm publish & publish_id=$!
+cd packages/eslint-config-node && npm publish --access public & publish_id=$!
+wait $publish_id
+if [ $? -eq 1 ]; then exit; fi
+
+echo -e "\n npm version \n"
+cd packages/eslint-config-pkg && npm version $2
+
+echo -e "\n npm publish \n"
+cd packages/eslint-config-pkg && npm publish --access public & publish_id=$!
+wait $publish_id
+if [ $? -eq 1 ]; then exit; fi
+
+echo -e "\n npm version \n"
+cd packages/eslint-config-react && npm version $2
+
+echo -e "\n npm publish \n"
+cd packages/eslint-config-react && npm publish --access public & publish_id=$!
 wait $publish_id
 if [ $? -eq 1 ]; then exit; fi
 
