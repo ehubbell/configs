@@ -1,6 +1,6 @@
 {
   "name": "@ehubbell/configs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of configs used for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
@@ -11,7 +11,9 @@
     "./ts-config-node": "./src/ts-config-node.js",
     "./ts-config-web": "./src/ts-config-web.js"
   },
-  "files": ["src*"],
+  "files": [
+    "src*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehubbell/configs.git"
