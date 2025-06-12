@@ -11,8 +11,8 @@ npm install
 ## ESLint Usage
 Add one of the following to your `package.json` file:
 ```json
-  "eslintConfig": { "extends": "@ehubbell/configs/eslint-config-node" },
-  "eslintConfig": { "extends": "@ehubbell/configs/eslint-config-web" },
+  "eslintConfig": { "extends": "./node_modules/@ehubbell/configs/src/eslint-config-node.js" },
+  "eslintConfig": { "extends": "./node_modules/@ehubbell/configs/src/eslint-config-web.js" },
 ```
 
 ## Prettier Usage
