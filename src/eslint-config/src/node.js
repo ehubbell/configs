@@ -4,7 +4,6 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:eqeqeq-fix/recommended',
-		'plugin:@next/next/recommended',
 		'plugin:prettier/recommended',
 	],
 	parser: '@typescript-eslint/parser',
@@ -35,8 +34,16 @@ module.exports = {
 		{
 			files: ['**/*.js', '**/*.ts', '**/*.tsx', '**.*.css'],
 			rules: {
-				'simple-import-sort/imports': ['error'],
+				'simple-import-sort/imports': [
+					'error',
+					{
+						groups: [['express']],
+					},
+				],
 			},
 		},
 	],
 };
+
+// Docs
+// https://archive.eslint.org/docs/developer-guide/shareable-configs

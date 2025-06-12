@@ -11,19 +11,19 @@
 			"name": "project-terminal-eslint",
 			"focus": true,
 			"execute": false,
-			"command": ""
+			"command": "cd src/eslint-config"
 		},
 		{
 			"name": "project-terminal-prettier",
 			"focus": true,
 			"execute": false,
-			"command": ""
+			"command": "cd src/prettier-config"
 		},
 		{
 			"name": "project-terminal-ts",
 			"focus": true,
 			"execute": false,
-			"command": ""
+			"command": "cd src/ts-config"
 		},
     {
 			"name": "misc",

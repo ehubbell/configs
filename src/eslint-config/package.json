@@ -1,10 +1,13 @@
 {
-  "name": "@ehubbell/eslint-config-web",
+  "name": "@ehubbell/eslint-config",
   "version": "0.0.8",
-  "description": "An ESLint config used for Web projects.",
+  "description": "A collection of eslint configs for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
-  "main": "index.js",
+  "exports": {
+    "./web": "./src/web.js",
+    "./node": "./src/node.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehubbell/configs.git"
@@ -27,7 +30,6 @@
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
     "eslint-config-next": "^15.3.3",
-    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-eqeqeq-fix": "^1.0.3",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-simple-import-sort": "^8.0.0",

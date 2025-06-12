@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
     "rootDir": ".",
     "target": "ESNext",
     "module": "ESNext",
@@ -21,13 +20,9 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noImplicitReturns": false,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "src/*": ["src/*"],
-      "tests/*": ["./tests/*"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "tests"],
+  "include": ["src"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

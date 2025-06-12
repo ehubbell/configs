@@ -3,7 +3,7 @@ A collection of Typescript configs for various projects.
 
 ## Installation
 ```
-npm i @ehubbell/tsconfigs  --save-dev
+npm i @ehubbell/ts-config  --save-dev
 ```
 
 ## Usage
@@ -11,7 +11,22 @@ Create a `tsconfig.json` file and add the following:
 
 ```json
 {
-  "extends": "@ehubbell/tsconfig-web/web.json",
+  "extends": "@ehubbell/ts-config/web",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
+```
+
+Or...
+
+```json
+{
+  "extends": "@ehubbell/ts-config/node",
   "compilerOptions": {
     "baseUrl": "src",
     "rootDir": "."

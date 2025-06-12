@@ -1,11 +1,14 @@
 {
-  "name": "@ehubbell/tsconfig-web",
+  "name": "@ehubbell/ts-config",
   "version": "0.0.1",
-  "description": "A tsconfig for web projects.",
+  "description": "A collection of typescript configs for various projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
-  "main": "index.js",
-  "files": ["*.json"],
+  "type": "module",
+  "exports": {
+    "./web": "./src/web.json",
+    "./node": "./src/node.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehubbell/configs.git"
