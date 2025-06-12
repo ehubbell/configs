@@ -38,10 +38,7 @@ wait $push_id
 if [ $? -eq 1 ]; then exit; fi
 
 echo -e "\n npm version \n"
-cd src/eslint-config-web && npm version $2
-
-echo -e "\n npm publish \n"
-cd src/eslint-config-web && npm publish --access public & publish_id=$!
+cd src/eslint-config-web && npm version $2 && npm publish --access public && cd ../.. & publish_id=$!
 wait $publish_id
 if [ $? -eq 1 ]; then exit; fi
 
