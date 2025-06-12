@@ -38,37 +38,37 @@ wait $push_id
 if [ $? -eq 1 ]; then exit; fi
 
 echo -e "\n npm version \n"
-cd packages/eslint-config-node && npm version $2
+cd packages/eslint-config-web && npm version $2
 
 echo -e "\n npm publish \n"
-cd packages/eslint-config-node && npm publish --access public & publish_id=$!
+cd packages/eslint-config-web && npm publish --access public & publish_id=$!
 wait $publish_id
 if [ $? -eq 1 ]; then exit; fi
 
-echo -e "\n npm version \n"
-cd packages/eslint-config-pkg && npm version $2
+# echo -e "\n npm version \n"
+# cd packages/eslint-config-pkg && npm version $2
 
-echo -e "\n npm publish \n"
-cd packages/eslint-config-pkg && npm publish --access public & publish_id=$!
-wait $publish_id
-if [ $? -eq 1 ]; then exit; fi
+# echo -e "\n npm publish \n"
+# cd packages/eslint-config-pkg && npm publish --access public & publish_id=$!
+# wait $publish_id
+# if [ $? -eq 1 ]; then exit; fi
 
-echo -e "\n npm version \n"
-cd packages/eslint-config-react && npm version $2
+# echo -e "\n npm version \n"
+# cd packages/eslint-config-react && npm version $2
 
-echo -e "\n npm publish \n"
-cd packages/eslint-config-react && npm publish --access public & publish_id=$!
-wait $publish_id
-if [ $? -eq 1 ]; then exit; fi
+# echo -e "\n npm publish \n"
+# cd packages/eslint-config-react && npm publish --access public & publish_id=$!
+# wait $publish_id
+# if [ $? -eq 1 ]; then exit; fi
 
-echo -e "\n git push tags \n"
-git push --tags & push_id=$!
-wait $push_id
-if [ $? -eq 1 ]; then exit; fi
+# echo -e "\n git push tags \n"
+# git push --tags & push_id=$!
+# wait $push_id
+# if [ $? -eq 1 ]; then exit; fi
 
-echo -e "\n git push \n"
-git push & push_id=$!
-wait $push_id
-if [ $? -eq 1 ]; then exit; fi
+# echo -e "\n git push \n"
+# git push & push_id=$!
+# wait $push_id
+# if [ $? -eq 1 ]; then exit; fi
 
 echo -e "\n deploy finished. \n"

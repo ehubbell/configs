@@ -17,7 +17,7 @@ export default defineConfig({
 		lib: {
 			entry: path.resolve(__dirname, 'index.js'),
 			name: 'HTML',
-			formats: ['es', 'cjs'],
+			formats: ['cjs'],
 			fileName: format => `index.${format}.js`,
 		},
 	},
