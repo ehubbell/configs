@@ -1,29 +1,60 @@
-# Overview
- A lightweight vite-based NPM package starter.
+## Overview
+This library contains a collection of configs for various projects.
+It's designed to simplify and standardize your project setup for less boilerplate and faster development.
 
-## Prerequisites
-- Git
-- Node
-- NPM
+## Installation
+```
+npm i @ehubbell/configs --save-dev
+npm install
+```
 
-## Quick Start
-- npm install
-- npm start
+## ESLint Usage
+Add one of the following to your `package.json` file:
+```json
+  "eslintConfig": { "extends": "@ehubbell/configs/eslint-config-node" },
+  "eslintConfig": { "extends": "@ehubbell/configs/eslint-config-web" },
+```
 
-## Development
-- npm link
-- switch to project
-- npm link <package_name>
+## Prettier Usage
+Add the following to your `package.json` file:
+```json
+  "prettier": "@ehubbell/configs/prettier-config",
+```
 
-## Scripts
-- We've included a couple of helpful scripts for faster development.
-- deploy: `npm run deploy -- 'commit message'`
-- publish: `npm run publish -- 'commit message' [major|minor|patch]`
+## TSConfig Usage
+Create a `tsconfig.json` file and add one of the following:
 
-## Husky
-- Husky configuration is setup to lint and format the repo on every commit
-- Edit the `.husky/pre-commit` file to change your settings
+```json
+{
+  "extends": "@ehubbell/ts-config/web",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
+```
+```json
+{
+  "extends": "@ehubbell/ts-config/node",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
+```
 
 ## Author
-- Eric Hubbell
+- [Eric Hubbell](http://www.erichubbell.com)
 - eric@erichubbell.com
+
+## Links
+- https://archive.eslint.org/docs/developer-guide/shareable-configs
+- https://prettier.io/docs/sharing-configurations
+- https://www.typescriptlang.org/tsconfig/#extends
+- https://dev.to/saiful7778/how-to-create-a-reusable-typescript-config-package-in-turborepo-3nh
