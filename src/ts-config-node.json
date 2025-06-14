@@ -2,12 +2,11 @@
   "display": "tsconfig-node",
   "compilerOptions": {
     "target": "esnext",
-    "module": "node16",
-    "esModuleInterop": true,
-    "moduleResolution": "node16",
-    "baseUrl": ".",
-    "rootDir": ".",
-    "outDir": "dist",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "baseUrl": "../../../..",
+    "rootDir": "../../../..",
+    "outDir": "../../../../dist",
     "strict": false,
     "noEmit": false,
     "sourceMap": false,
@@ -24,6 +23,9 @@
       "db/*": [ "./db/*" ],
       "src/*": [ "./src/*" ],
       "tests/*": [ "./tests/*" ]
-    }
+    },
+    "plugins": [
+      { "transform": "typescript-transform-paths" }
+    ]
   }
 }
