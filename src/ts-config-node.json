@@ -2,21 +2,28 @@
   "display": "tsconfig-node",
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "preserve",
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "outDir": "dist",
-    "allowJs": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
+    "module": "node16",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node16",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
     "strict": false,
+    "noEmit": false,
+    "sourceMap": false,
+    "declaration": true,
+    "useDefineForClassFields": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "incremental": true
+    "paths": {
+      "db/*": [ "./db/*" ],
+      "src/*": [ "./src/*" ],
+      "tests/*": [ "./tests/*" ]
+    }
   }
 }

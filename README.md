@@ -58,6 +58,7 @@ Create a `tsconfig.json` file and add one of the following:
 - this means we need to import each one separately
 - eslint v9 also doesn't allow placement in package.json
 - module.exports >> export default
+- https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package
 
 ## Links
 - https://archive.eslint.org/docs/developer-guide/shareable-configs
