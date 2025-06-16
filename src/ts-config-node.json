@@ -1,12 +1,12 @@
 {
   "display": "tsconfig-node",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
     "baseUrl": "../../../..",
     "rootDir": "../../../..",
     "outDir": "../../../../dist",
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "strict": false,
     "noEmit": false,
     "noEmitOnError": true,
@@ -26,7 +26,8 @@
       "db/*": [ "./db/*" ],
       "public/*": [ "./public/*" ],
       "src/*": [ "./src/*" ],
-      "tests/*": [ "./tests/*" ]
+      "tests/*": [ "./tests/*" ],
+      "types/*": ["./types/*"]
     }
   }
 }
