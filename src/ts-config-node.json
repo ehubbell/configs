@@ -23,8 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "db/*": [ "./db/*" ],
-      "public/*": [ "./public/*" ],
       "src/*": [ "./src/*" ],
       "tests/*": [ "./tests/*" ],
       "types/*": ["./types/*"]
