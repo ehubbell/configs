@@ -30,11 +30,11 @@
     "typescript-config"
   ],
   "scripts": {
+    "clean": "npm run lint:fix",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "format": "prettier src",
     "format:fix": "prettier --write src",
-    "clean": "npm run lint:fix && npm run format:fix",
     "commit": "scripts/commit.sh",
     "deploy": "scripts/deploy.sh",
     "yalc": "npx yalc push"
