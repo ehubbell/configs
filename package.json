@@ -5,10 +5,11 @@
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
   "exports": {
+    "./eslint-config-package": "./src/eslint-config-package.js",
     "./eslint-config-node": "./src/eslint-config-node.js",
     "./eslint-config-web": "./src/eslint-config-web.js",
     "./prettier-config": "./src/prettier-config.js",
-    "./ts-config-library": "./src/ts-config-library.json",
+    "./ts-config-package": "./src/ts-config-package.json",
     "./ts-config-node": "./src/ts-config-node.json",
     "./ts-config-web": "./src/ts-config-web.json"
   },
