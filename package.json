@@ -40,8 +40,8 @@
     "yalc": "npx yalc push"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^3.5",
+    "eslint": "^8",
+    "prettier": "^3",
     "typescript": "^5"
   },
   "dependencies": {
@@ -56,8 +56,8 @@
     "eslint-plugin-unused-imports": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^3.5",
-    "typescript": "^5"
+    "eslint": "^8.57.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
   }
 }
