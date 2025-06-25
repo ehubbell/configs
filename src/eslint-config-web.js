@@ -2,6 +2,7 @@ module.exports = {
 	root: true,
 	extends: [
 		'eslint:recommended',
+		'plugin:markdown/recommended-legacy',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:eqeqeq-fix/recommended',
 		'plugin:@next/next/recommended',
@@ -32,6 +33,10 @@ module.exports = {
 		'simple-import-sort/exports': 'off',
 	},
 	overrides: [
+		{
+			files: ['**/*.md'],
+			processor: 'markdown/markdown',
+		},
 		{
 			files: ['**/*.js', '**/*.ts', '**/*.tsx', '**.*.css'],
 			rules: {

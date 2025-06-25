@@ -5,6 +5,7 @@ module.exports = {
 	},
 	extends: [
 		'eslint:recommended',
+		'plugin:markdown/recommended-legacy',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:eqeqeq-fix/recommended',
 		'plugin:prettier/recommended',
