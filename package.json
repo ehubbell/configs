@@ -30,7 +30,7 @@
     "typescript-config"
   ],
   "scripts": {
-    "clean": "npm run lint:fix",
+    "clean": "npm run lint:fix && npm run format:fix",
     "lint": "eslint --config src/eslint-config-package.js src",
     "lint:fix": "eslint --config src/eslint-config-package.js src --fix",
     "format": "prettier --config src/prettier-config.js src readme.md",
