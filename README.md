@@ -22,31 +22,31 @@ Add the following to your `package.json` file:
 ```
 
 ## TSConfig Usage
+
 Create a `tsconfig.json` file and add one of the following:
 
 ```json
 {
-  "extends": "@ehubbell/ts-config/web",
-  "compilerOptions": {
-    "baseUrl": "src",
-    "rootDir": "."
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+	"extends": "@ehubbell/configs/tsconfig-web",
+	"include": ["src"],
+	"exclude": ["node_modules"]
 }
-
 ```
+
 ```json
 {
-  "extends": "@ehubbell/ts-config/node",
-  "compilerOptions": {
-    "baseUrl": "src",
-    "rootDir": "."
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+	"extends": "@ehubbell/configs/tsconfig-package",
+	"include": ["src"],
+	"exclude": ["node_modules"]
 }
+```
 
+```json
+{
+	"extends": "@ehubbell/configs/tsconfig-node",
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
 ```
 
 ## Author
@@ -54,11 +54,16 @@ Create a `tsconfig.json` file and add one of the following:
 - eric@erichubbell.com
 
 ## Issues
+
+#### Eslint v9
 - eslint v9 doesn't allow nested `extends`
 - this means we need to import each one separately
 - eslint v9 also doesn't allow placement in package.json
 - module.exports >> export default
 - https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package
+
+#### Monorepos
+- when using the typescript configs above in a monorepo, you may have to specify the `baseUrl`, `rootDir`, and `outDir` properties
 
 ## Links
 - https://archive.eslint.org/docs/developer-guide/shareable-configs
